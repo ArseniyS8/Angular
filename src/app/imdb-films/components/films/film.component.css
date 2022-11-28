@@ -1,0 +1,7 @@
+.films{
+  margin: 0 5% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
