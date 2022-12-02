@@ -1,5 +1,5 @@
 import {Action} from "@ngrx/store";
-import {FilmsResponseModel} from "../models/film.response.model";
+import {FilmsResponseModel} from "../models/film-response.model";
 
 export enum filmActionsType {
   filmRequested = '[FILM] filmRequested',

@@ -2,13 +2,14 @@
     <img [src]=film.image class="card-img-top" alt="Card image">
     <div class="card-body">
       <h5 class="title">{{film.title}}</h5>
-      <p class="fullTitle">Полное название {{film.fullTitle}}</p>
-      <p class="rank">Топ {{film.rank}}</p>
-      <p class="year">Год выпуска: {{film.year}}</p>
-      <p class="crew">Режиссеры: {{film.crew}}</p>
-      <p class="imDbRating">Рейтинг IMDb: {{film.imDbRating}}</p>
-      <p class="imDbRatingCount">Количество рейтингов IMDb: {{film.imDbRatingCount}}</p>
-<!--      <a href="#" class="btn btn-primary">{{film.id}}</a>-->
+      <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Показать еще</span></button>
+      <nz-modal [(nzVisible)]="isVisible"
+                nzTitle="Подробная информация о фильме"
+                (nzOnCancel)="handleCancel()"
+                (nzOnOk)="handleOk()">
+          <tooltip-menu *nzModalContent [filmInfo]="film">
+          </tooltip-menu>
+      </nz-modal>
     </div>
   </div>
 

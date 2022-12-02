@@ -1,5 +1,5 @@
-import {FilmsResponseModel} from "../models/film.response.model";
-import {FilmActions, filmActionsType} from "./film.action";
+import {FilmsResponseModel} from "../models/film-response.model";
+import {FilmActions, filmActionsType} from "./film-action";
 
 export const filmNode = 'film';
 

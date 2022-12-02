@@ -1,4 +1,4 @@
-import {FilmsCard} from "./film.card.model";
+import {FilmsCard} from "./film-card.model";
 
 export class FilmsResponseModel {
   items?:Array<FilmsCard>;

@@ -1,0 +1,33 @@
+.d-flex {
+  padding-top: 10px;
+  border: none;
+  border-bottom: 3px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 4em;
+  padding-bottom: 5px;
+}
+
+.form-control {
+  size: auto;
+  border-radius: 30px;
+}
+
+.button {
+  display: flex;
+  width: 15%;
+  font-size: 20px;
+  font-family: monospace;
+  color: #fff;
+  background: linear-gradient(to left, #f5af19, #f12711, #f5af19);
+  text-decoration: none;
+  border-radius: 10px;
+  background-size: 200%;
+  transition: .5s;
+  align-items: center;
+}
+
+.button:hover {
+  background-position: right;
+}

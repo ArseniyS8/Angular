@@ -1,7 +1,10 @@
+<app-search-menu (searchDataChanged)="searchedDataChanged($event)"></app-search-menu>
+
 <div class="films">
   <card
     class="card m-lg-4" style="width: 25%;"
-    *ngFor="let card of filmsList"
+    *ngFor="let card of filmsList | searchFilms:searchName"
     [film]="card"
   ></card>
 </div>
+

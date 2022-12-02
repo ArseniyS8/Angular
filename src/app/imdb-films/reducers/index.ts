@@ -2,7 +2,7 @@ import {
   ActionReducerMap,
   MetaReducer
 } from '@ngrx/store';
-import {filmNode, filmReducer, FilmState} from "./film.reducer";
+import {filmNode, filmReducer, FilmState} from "./film-reducer";
 import {environment} from "../../../environments/environment";
 
 export interface State {
