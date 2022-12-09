@@ -1,16 +1,18 @@
-  <div >
-    <img [src]=film.image class="card-img-top" alt="Card image">
-    <div class="card-body">
-      <h5 class="title">{{film.title}}</h5>
-      <button nz-button [nzType]="'primary'" (click)="showModal()"><span>Показать еще</span></button>
-      <nz-modal [(nzVisible)]="isVisible"
-                nzTitle="Подробная информация о фильме"
-                (nzOnCancel)="handleCancel()"
-                (nzOnOk)="handleOk()">
-          <tooltip-menu *nzModalContent [filmInfo]="film">
-          </tooltip-menu>
-      </nz-modal>
-    </div>
+<div>
+  <img [src]=film.image class="card-img-top" alt="Card image">
+  <div class="card-body">
+    <h5 class="title">{{film.title}}</h5>
+    <button nz-button [nzType]="'primary'" (click)="showModal(film.id)">
+      <span>Показать еще</span>
+    </button>
+    <nz-modal [(nzVisible)]="isVisible"
+              nzTitle="Подробная информация о фильме"
+              (nzOnCancel)="handleCancel()"
+              (nzOnOk)="handleOk()">
+      <tooltip-menu *nzModalContent [filmInfo]="film">
+      </tooltip-menu>
+    </nz-modal>
   </div>
+</div>
 
 

@@ -3,6 +3,4 @@ export class FilmsFiltrationParams {
   constructor(searchName:string) {
     this.searchName = searchName
   }
-
-
 }

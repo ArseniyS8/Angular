@@ -1,0 +1,24 @@
+<div class="row" style="height: 100%">
+  <ng-container *ngIf="trailer; else TrailerNotFound">
+    <div class="col-8 ">
+      <a class="btn-back" (click)="back()"><i nz-icon nzType="rollback" nzTheme="outline"></i> Назад</a>
+      <p class="name">Просмотр Трейлера</p>
+      <iframe class="iframe" allowfullscreen="allowfullscreen" [src]="urlSafe"></iframe>
+    </div>
+    <div class="col-4">
+      <ul>
+        <li><p class="title">Название: {{trailer.title}}</p></li>
+        <li><p class="fullTitle">Полное название: {{trailer.fullTitle}}</p></li>
+        <li><p class="type">Тип: {{trailer.type}}</p></li>
+        <li><p class="year">Год: {{trailer.year}}</p></li>
+        <li><p class="videoTitle">Название трейлера: {{trailer.videoTitle}}</p></li>
+        <li><p class="videoDescription">Описание видео: {{trailer.videoDescription}}</p></li>
+        <li><p class="uploadDate">Дата загрузки: {{trailer.uploadDate}}</p></li>
+      </ul>
+    </div>
+  </ng-container>
+  <ng-template #TrailerNotFound>
+    <div class="notFind"> ERROR</div>
+  </ng-template>
+</div>
+

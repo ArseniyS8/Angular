@@ -1,10 +1,9 @@
 import {Injectable} from "@angular/core";
-import {filmActionsType, FilmUpdatedAction} from "./reducers/film-action";
+import {filmActionsType, FilmUpdatedAction} from "../reducers/film/film-action";
 import {map, switchMap} from "rxjs";
-import {FilmsResponseModel} from "./models/film-response.model";
-import {FilmService} from "./service/film-service";
+import {FilmsResponseModel} from "../models/film-models/film-response.model";
+import {FilmService} from "../service/film.service";
 import {Actions, createEffect, ofType} from "@ngrx/effects";
-
 
 @Injectable()
 export class AppEffects {
@@ -22,3 +21,4 @@ export class AppEffects {
       ))
     ))
 }
+

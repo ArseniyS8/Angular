@@ -1,4 +1,4 @@
-export class FilmsCard{
+export class  FilmsCard{
   title: string | undefined;
   fullTitle: string | undefined;
   rank: string | undefined;
@@ -9,3 +9,4 @@ export class FilmsCard{
   id: string | undefined;
   image: string | undefined;
 }
+

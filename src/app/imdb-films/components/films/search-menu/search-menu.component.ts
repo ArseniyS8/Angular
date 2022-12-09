@@ -3,9 +3,9 @@ import {Component, EventEmitter, OnInit, Output} from "@angular/core";
 @Component({
   selector: 'app-search-menu',
   templateUrl: './search-menu.component.html',
-  styleUrls:['./search-menu.component.scss']
+  styleUrls: ['./search-menu.component.scss']
 })
-export class SearchMenuComponent implements OnInit{
+export class SearchMenuComponent implements OnInit {
   searchName: string = '';
 
   @Output()
@@ -16,6 +16,7 @@ export class SearchMenuComponent implements OnInit{
 
   ngOnInit(): void {
   }
+
   searchFilmsInList() {
     this.searchDataChanged.emit({searchName: this.searchName})
   }

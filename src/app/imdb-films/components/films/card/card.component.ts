@@ -1,20 +1,23 @@
 import {Component, Input} from "@angular/core";
-import {NzModalModule, NzModalService} from 'ng-zorro-antd/modal';
 
 @Component({
   selector: "card",
   templateUrl: "./card.component.html",
   styleUrls: ["./card.component.scss"]
 })
+
 export class CardComponent {
   isVisible = false;
-  constructor(private modalService: NzModalService,) {
+
+  constructor() {
   }
+
   @Input()
   film: any;
 
+  visible: boolean = false;
 
-  showModal(): void {
+  showModal(id: string): void {
     this.isVisible = true;
   }
 
@@ -28,3 +31,4 @@ export class CardComponent {
     this.isVisible = false;
   }
 }
+

@@ -1,5 +1,5 @@
 import {Action} from "@ngrx/store";
-import {FilmsResponseModel} from "../models/film-response.model";
+import {FilmsResponseModel} from "../../models/film-models/film-response.model";
 
 export enum filmActionsType {
   filmRequested = '[FILM] filmRequested',
@@ -12,6 +12,7 @@ export class FilmRequestedAction implements Action {
 
 export class FilmUpdatedAction implements Action {
   readonly type = filmActionsType.filmUpdated;
+
   constructor(public payload: FilmsResponseModel) {
   }
 }

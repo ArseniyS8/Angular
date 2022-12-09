@@ -19,15 +19,19 @@
   width: 15%;
   font-size: 20px;
   font-family: monospace;
-  color: #fff;
+  color: black;
   background: linear-gradient(to left, #f5af19, #f12711, #f5af19);
   text-decoration: none;
   border-radius: 10px;
   background-size: 200%;
   transition: .5s;
+  padding: 16px 32px;
   align-items: center;
+  text-align: center;
 }
 
 .button:hover {
   background-position: right;
 }
+
+

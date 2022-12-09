@@ -1,9 +1,9 @@
-import {FilmsResponseModel} from "../models/film-response.model";
+import {FilmsResponseModel} from "../../models/film-models/film-response.model";
 import {FilmActions, filmActionsType} from "./film-action";
 
 export const filmNode = 'film';
 
-export interface FilmState extends FilmsResponseModel{
+export interface FilmState extends FilmsResponseModel {
 }
 
 const initialState: FilmState = {
